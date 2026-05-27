@@ -29,7 +29,7 @@ all_books = Book.get_all_books()
 print("📚 전체 책 목록:")
 # ▼ TODO 2-1 (1점): for 루프를 작성하여 all_books 의 각 책을 print 하세요.
 #     형식:   for ___변수___ in ___컬렉션___:
-for _____ in _____:
+for book in all_books:
     print(book)
 
 # ──────────────────────────────────────────────────────────────
@@ -38,7 +38,7 @@ for _____ in _____:
 orwell_books = Book.get_books_by_author("George Orwell")
 print("\n✍️ George Orwell 책 목록:")
 # ▼ TODO 2-2 (1점): for 루프를 작성하여 orwell_books 의 각 책을 print 하세요.
-for _____ in _____:
+for book in orwell_books:
     print(book)
 
 # ──────────────────────────────────────────────────────────────
@@ -47,7 +47,7 @@ for _____ in _____:
 dystopia_books = Book.get_books_by_title_keyword("new")
 print("\n🔍 제목에 'new'가 포함된 책 목록:")
 # ▼ TODO 2-3 (1점): for 루프를 작성하여 dystopia_books 의 각 책을 print 하세요.
-for _____ in _____:
+for book in dystopia_books:
     print(book)
 
 # ──────────────────────────────────────────────────────────────
@@ -56,7 +56,7 @@ for _____ in _____:
 sorted_books = Book.get_books_ordered_by_title()
 print("\n🔠 제목순 정렬:")
 # ▼ TODO 2-4 (1점): for 루프를 작성하여 sorted_books 의 각 책을 print 하세요.
-for _____ in _____:
+for book in sorted_books:
     print(book)
 
 # ──────────────────────────────────────────────────────────────
